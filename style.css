@@ -1,0 +1,94 @@
+.reset-button {
+    color: #323f4b;
+    background-color: #ffffff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 70px;
+    height: 36px;
+    margin-left: 16px;
+}
+
+.sumbit-button {
+    color: #ffffff;
+    background-color: #690cb0;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 70px;
+    height: 36px;
+    margin-left: 16px;
+}
+
+.result-para {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3e4c59;
+}
+
+.quote-textarea {
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #323f4b;
+    margin-top: 12px;
+    height: 20vh;
+    width: 66vw;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9aa5b1;
+}
+
+.quote-para {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3e4c59;
+}
+
+.quote-container {
+    background-image: linear-gradient(to right, #f2ebfe, #f2ebfe);
+    width: 80vw;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9aa5b1;
+    padding: 20px;
+}
+
+.timer-span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3e4c59;
+}
+
+.timer-para {
+    font-size: 45px;
+    font-weight: 600;
+    color: #3e4c59;
+    margin-left: 20px;
+}
+
+.image {
+    height: 60px;
+}
+
+.main-para {
+    margin-top: 16px;
+    font-weight: 600;
+    color: #3e4c59;
+}
+
+.main-heading {
+    font-size: 42px;
+    font-weight: bold;
+    color: #690cb0;
+}
+
+.bg-container {
+    background-image: linear-gradient(to right, #f3eaff, #dac0ff);
+    padding: 12px;
+    height: 100vh;
+    width: 100vw;
+}
