@@ -22,6 +22,8 @@ fetch(url, option)
          let wordCount = countWords(data);
     
 
+   
+
 
 
 
@@ -53,13 +55,11 @@ sumbitBtnEl.addEventListener("click", function() {
     } else {
         count = count - 1;
         clearInterval(uniqueNo1);
-        resultEl.textContent = "You typed "+ wordCount +" Words in "+ count + "Seconds";
+        resultEl.textContent = "You typed " + wordCount+ " Words in " + count + " Seconds";
     }
 });
-        });
 
 let resetBtnEl = document.getElementById("resetBtn");
-
 
 resetBtnEl.addEventListener("click", function() {
     quoteInputEl.value = "";
@@ -82,5 +82,6 @@ resetBtnEl.addEventListener("click", function() {
             quoteDisplayEl.textContent = jsonData.content;
         });
 
-});
+});   
 
+});
