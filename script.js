@@ -11,8 +11,16 @@ fetch(url, option)
     .then(function(jsonData) {
         let data = jsonData.content;
         quoteDisplayEl.textContent = data;
-
-    });
+        function countWords(data) {
+            data = data.trim();
+            if (data === "") {
+                return 0;
+            }
+            let words = data.split(/\s+/);
+            return words.length;
+        }
+         let wordCount = countWords(data);
+    
 
 
 
@@ -45,13 +53,15 @@ sumbitBtnEl.addEventListener("click", function() {
     } else {
         count = count - 1;
         clearInterval(uniqueNo1);
-        resultEl.textContent = "You typed in " + count + "Seconds";
+        resultEl.textContent = "You typed "+ wordCount +" Words in "+ count + "Seconds";
     }
 });
+        });
 
 let resetBtnEl = document.getElementById("resetBtn");
 
-function reset() {
+
+resetBtnEl.addEventListener("click", function() {
     quoteInputEl.value = "";
     resultEl.textContent = "";
     clearInterval(uniqueNo1);
@@ -72,6 +82,5 @@ function reset() {
             quoteDisplayEl.textContent = jsonData.content;
         });
 
-}
-resetBtnEl.addEventListener("click", reset);
+});
 
