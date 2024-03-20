@@ -74,6 +74,4 @@ function reset() {
 
 }
 resetBtnEl.addEventListener("click", reset);
-if (count === 50) {
-    reset();
-}
+
